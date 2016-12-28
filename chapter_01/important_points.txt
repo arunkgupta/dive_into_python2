@@ -1,6 +1,11 @@
+Declaring Functions:
+
 1. Python function starts with def keyword
 2. Function doesn't define a return datatype.
 3. Every python function returns a value, if function ever executes a return statement, it will return that value,otherwise it will return None (Python null value)
 4. Function arguments doesn't specify datatype.
 5. In python, varaibles are never explicitly typed. Based on what value you assign, Python keeps track of the datatype internally.
 6. Python is both dynamically typed (b'coz it doesn't use explicit datatype declarationis) and strongly typed(because once a variable has a datatype, it actually matters.)
+
+Documenting Functions:
+1. Triple quotes signify a multi-line string. Everything between start and end quotes is part of a single string, including carriage returns and other quote characters
