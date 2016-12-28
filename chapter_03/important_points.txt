@@ -1,0 +1,8 @@
+Introducing Dictionaries:
+1. One-to-One relationship between keys and values.
+2. Keys will be unique. Assigning a value to an existing key will wipe out the old value
+3. Unordered.
+4. Dictionary keys are case-sensitive.
+5. Dictionary keys can be strings, integers, and few other types (immutable types).
+6. del keyword used to delete individual item from dictionary by key.
+7. clear method deletes all items from dictionary.
