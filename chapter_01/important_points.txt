@@ -1,5 +1,4 @@
 Declaring Functions:
-
 1. Python function starts with def keyword
 2. Function doesn't define a return datatype.
 3. Every python function returns a value, if function ever executes a return statement, it will return that value,otherwise it will return None (Python null value)
@@ -9,3 +8,7 @@ Declaring Functions:
 
 Documenting Functions:
 1. Triple quotes signify a multi-line string. Everything between start and end quotes is part of a single string, including carriage returns and other quote characters
+
+Everything is an Object:
+1. A function, like everything else in Python, is an object.
+2. In python everything is an object in the sense that it can be assigned to a variable or passed as an argument to a function.
