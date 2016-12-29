@@ -6,6 +6,9 @@ Introducing Dictionaries:
 5. Dictionary keys can be strings, integers, and few other types (immutable types).
 6. del keyword used to delete individual item from dictionary by key.
 7. clear method deletes all items from dictionary.
+8. keys method of a dictionary returns a list of all keys. The list is not in the order in which the dictionary was defined(as dictionary are unordered), but it is a list.
+9. The values method retuns a list of all the values. The list is in the same order as the list returned by keys, so {}.values()[n] == {}[{}.keys()[n]] for all values of n. ({} --> represents a dictionary variable)
+10. items method returns a list of tuple of the form (key, value)
 
 Introducing Lists:
 1. A list is an ordered set of elements enclosed in square brackets.
@@ -30,3 +33,32 @@ Introducing Lists:
 	a.) remove method removes first (and only first in case of multiple occurence) occurence of a value from a list. If calue is not found in list, Python raises an exception
 	b.) pop method removes last element of the list, and returns the value that is remove. Note that this different from li[-1], which returns a value but does not change list, and different from li.remove(value), which changes the list but does not return a value.
 12. Lists can also be concatenated with + operator. list = list + otherlist has the same result as list.extend(otherlist). But the + operator returns a new (concatenated) list as value, whereas extend only alters an existing list. This means the extend is faster, especially for large lists.
+
+
+Introducing tuple:
+1. A tuple is an immutable list. A tuple can not be changesd in any way once it is created.
+2. Defined as same way as lit, except that the whole set of elemnts  is enclosed in parentheses instead of square brackets.
+3. tuple have a defined order, just like a list.
+4. Index works same way as of list.
+5. Slicing works too. Slicing returns a new tuple, similarly to list.
+6. tuples have no method.
+7. However in operator/keyword work same as list and see if an element exists in tuple.
+8. tuples are faster that lists.
+9. It makes your code safer if you write-protect data that does not need to be changed.
+10. Tuples can be used as keys in a dictionary, but list can't be used. (Only tuples of string, numbers or other dictionary-safe tuples can be used as dictionary keys)
+11. Tuples are used in string formatting.
+12. Built-in tuple function takes a list and returns a tuple with the same elements, and the list function takes a tuple and returns a list.
+
+Declaring variables:
+1. Variables spring into existence by being assigned a value, and they are automatically destroyed when they go out of scope.
+2. When a command is split among several lines with the line-continuation marker("\"), the continued lines can be indented in any manner.
+
+Mapping List:
+1. List comprehension is a compact way of mapping a list into another list by applying a function to each of the elements of the lists. 
+2. List comprehension do not change the original list.
+3. It is safe to assign the result of list comprehension to the variable that you're mapping. Python constructs the new list in memory, and when the list compreshension is complete, it assigns the result to the variable.
+
+Joining List and Splitting Strings :
+1. To join any list of strings into a single string, use join method of a string object.Join works only on lists of string. It does not do any type coercion. Joining a list that has one or more non-string elements will raise an exception.
+2. split method reverse join by splitting a string into a multi-element list. Split method takes an optional second argument, which is the number of times to split.
+3. anystring.split(delimiter, 1) is a useful technique when you want to search a string for a substring and then work with everything before the substring(which ends up in the first element of the returned list) and everything after it(which ends up in the second element). 
