@@ -6,3 +6,27 @@ Introducing Dictionaries:
 5. Dictionary keys can be strings, integers, and few other types (immutable types).
 6. del keyword used to delete individual item from dictionary by key.
 7. clear method deletes all items from dictionary.
+
+Introducing Lists:
+1. A list is an ordered set of elements enclosed in square brackets.
+2. elements can be accessed using index. Index starts from 0.
+3. A negative index accesses elements from the end of the list counting backwards
+4. You can get a subset of list, called a "slice" by specifying two indices. The Return value is a new list conataining all the elements of the list, in order, starting with the fist slice index, up to but not including the second slice index.
+5. Slicing reading the list from left to right, the first slice index specifies the first element you want, and the second slice index specifies the first element you don't want. The return value is everything in between.
+6. <listname>[:] is shorthand for making a complete copy of a list.
+7. Adding element to list -->
+	a.) append method adds a single element to the end of list.
+	b.) insert method inserts a single element into a list. The numeric argument is the index of the first element that gets bumped out of position.
+	c.) extend method concatenates lists. Note that you don't call extend with multiple arguments; you call it with one argument, a list.
+8. index method is used to search a list. It finds the first occurence of a value in the list and returns the index. It the value is not found in the list, Python raises an exception.
+9. in keyword/operator can be used to test whether a value is in the list. It returns True if the value is found or False if it is not.
+10. Python had no separate boolean datatype. To compensate for this, Python accepted almost anything in a boolena context(like an if statement), according to the following rules.
+	-> 0 is false, all other numbers are true.
+	-> An empty string("")is false, all other strings are true.
+	-> An empty list([]) is false, all other lists are true.
+	-> An empty tuple(()) is false, all other tuples are true.
+	-> An empty dictionary({}) is false, all other dictionaries are true.
+11. Deleting list Elements-->
+	a.) remove method removes first (and only first in case of multiple occurence) occurence of a value from a list. If calue is not found in list, Python raises an exception
+	b.) pop method removes last element of the list, and returns the value that is remove. Note that this different from li[-1], which returns a value but does not change list, and different from li.remove(value), which changes the list but does not return a value.
+12. Lists can also be concatenated with + operator. list = list + otherlist has the same result as list.extend(otherlist). But the + operator returns a new (concatenated) list as value, whereas extend only alters an existing list. This means the extend is faster, especially for large lists.
