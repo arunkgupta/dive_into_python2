@@ -30,7 +30,7 @@ Introducing Lists:
 	-> An empty tuple(()) is false, all other tuples are true.
 	-> An empty dictionary({}) is false, all other dictionaries are true.
 11. Deleting list Elements-->
-	a.) remove method removes first (and only first in case of multiple occurence) occurence of a value from a list. If calue is not found in list, Python raises an exception
+	a.) remove method removes first (and only first in case of multiple occurence) occurence of a value from a list. If value is not found in list, Python raises an exception
 	b.) pop method removes last element of the list, and returns the value that is remove. Note that this different from li[-1], which returns a value but does not change list, and different from li.remove(value), which changes the list but does not return a value.
 12. Lists can also be concatenated with + operator. list = list + otherlist has the same result as list.extend(otherlist). But the + operator returns a new (concatenated) list as value, whereas extend only alters an existing list. This means the extend is faster, especially for large lists.
 
